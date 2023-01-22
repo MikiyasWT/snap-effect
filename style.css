@@ -1,0 +1,47 @@
+
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    /* specifies where the snapping should start */
+    scroll-snap-align: start;
+}
+
+.container {
+    /* specifies to which direction to snap */
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    /* setting the container height is must */
+    height: 100vh;
+}
+
+.one {
+ background: rgb(36,164,138);
+}
+
+.two {
+    background: rgb(117, 12, 86);
+    height: 50vh;
+}
+
+.three {
+    background: rgb(13, 53, 139);
+    height: 300vh;
+}
+
+.four {
+    background: rgb(235, 97, 6);
+}
+
+.five {
+    background: rgb(182, 7, 7);
+}
